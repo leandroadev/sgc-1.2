@@ -13,6 +13,16 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::any('collaborator/search', 'CollaboratorsController@search')->name('collaborators.search')->middleware('auth');
+Route::resource('collaborators', 'CollaboratorsController')->middleware(['auth', 'check.is.admin']);
+
+// Route::get('/colaboradores', function() {
+//     return view('admin.pages.collaborators.index');
+// });
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
+Auth::routes(['register' => false]);
+
+Route::get('/home', 'HomeController@index')->name('home');
