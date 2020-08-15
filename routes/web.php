@@ -21,7 +21,7 @@ Route::resource('collaborators', 'CollaboratorsController')->middleware(['auth',
 // });
 
 Route::get('/', function () {
-    return view('auth.login');
+    return view('index');
 });
 Auth::routes(['register' => false]);
 

@@ -41,7 +41,7 @@
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                <a class="nav-link" href="{{ route('login') }}">{{ __('Acesso') }}</a>
                             </li>
                             @if (Route::has('register'))
                                 <li class="nav-item">
@@ -58,7 +58,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('Sair') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
@@ -75,6 +75,11 @@
         <main class="py-4">
             @yield('content')
         </main>
+        <nav class="navbar fixed-bottom navbar-light bg-light">
+            <div class="container">
+                @yield('footer')
+            </div>
+        </nav>
     </div>
 </body>
 </html>
