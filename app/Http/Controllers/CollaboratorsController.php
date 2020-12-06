@@ -25,7 +25,7 @@ class CollaboratorsController extends Controller
      */
     public function index()
     {
-        $collaborators = Collaborator::paginate();
+        $collaborators = Collaborator::latest()->paginate();
         return view('admin.pages.collaborators.index', [
             'collaborators' => $collaborators,
         ]);

@@ -7,7 +7,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>@yield('title') - SGC Sistema de Gestão de Colaboradores</title>
+    <title>@yield('title') :: SGC - Sistema de Gestão de Colaboradores</title>
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>

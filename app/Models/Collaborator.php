@@ -15,11 +15,11 @@ class Collaborator extends Model
    {
        $results = $this->where(function ($query) use($filter) {
            if($filter){
-               $query->where('name', 'LIKE', "%{$filter}%");
+               $query->where('cpf', 'LIKE', "%{$filter}%");
            }
        })//->toSql();
        ->paginate();
- 
+
        return $results;
    }
 

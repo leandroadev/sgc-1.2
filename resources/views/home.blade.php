@@ -1,17 +1,17 @@
 @extends('layouts.app')
 
-@section('title', 'Dashboard')
+@section('title', 'Painel')
 
 @section('content')
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2">
-            <ul class="list-group">
-                <li class="list-group-item active">{{ __('Dashboard') }}</li>
-                <li class="list-group-item"><a href="{{ url('collaborators') }}">{{ __('Colaboradores') }}</a></li>
-                <li class="list-group-item">{{ __('Menu') }}</li>
-                <li class="list-group-item">{{ __('Menu') }}</li>
-            </ul>
+            <div class="list-group">
+                <a href="{{ url('home') }}" class="list-group-item list-group-item-action active">{{ __('Painel') }}</a>
+                <a href="{{ url('collaborators') }}" class="list-group-item list-group-item-action">{{ __('Colaboradores') }}</a>
+                <a href="{{ url('#') }}" class="list-group-item list-group-item-action">{{__('Menu') }}</a>
+                <a href="{{ url('#') }}" class="list-group-item list-group-item-action">{{__('Menu') }}</a>
+            </div>
         </div>
     </div>
 </div>
