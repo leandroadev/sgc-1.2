@@ -11,7 +11,6 @@
               <div class="card-body">
                 <p class="card-text">Faça login no sistema para gerenciar os colaboradores de sua instituição.</p>
                 <p class="card-text">Se não tiver acesso, contate o admintrador do sistema.</p>
-                <p class="card-text">E-mail: email@exemplo.com</p>
               </div>
             </div>
         </div>
