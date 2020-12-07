@@ -22,7 +22,7 @@
 <body>
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+            <div class="container-fluid">
                 <a class="navbar-brand" href="{{ url('/home') }}">
                     SGC - Sistema de Gestão de Colaboradores
                 </a>
@@ -76,7 +76,7 @@
             @yield('content')
         </main>
         <nav class="navbar fixed-bottom navbar-light bg-light">
-            <div class="container">
+            <div class="container-fluid">
                 @yield('footer')
             </div>
         </nav>

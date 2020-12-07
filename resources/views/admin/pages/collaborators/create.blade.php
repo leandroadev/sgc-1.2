@@ -11,3 +11,7 @@
         </form>
     </div>
 @endsection
+
+@section('footer')
+    <p>Copyright © <?php echo date("Y"); ?></p>    
+@endsection
